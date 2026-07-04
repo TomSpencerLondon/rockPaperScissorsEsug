@@ -1,19 +1,19 @@
 "
-I am Scissors. I beat Paper. Rock beats me.
+I am Paper. I beat Rock. Scissors beats me.
 "
 Class {
-	#name : 'Scissors',
+	#name : 'Paper',
 	#superclass : 'Object',
 	#category : 'RockPaperScissors',
 	#package : 'RockPaperScissors'
 }
 
 { #category : 'as yet unclassified' }
-Scissors >> playAgainst: aRole [ 
-	^ aRole playAgainstScissors: self.
+Paper >> playAgainstRock: aRock [ 
+	^ self.
 ]
 
 { #category : 'as yet unclassified' }
-Scissors >> playAgainstRock: rock [ 
-	^ rock.
+Paper >> playAgainstScissors: aScissors [ 
+	^ aScissors.
 ]
