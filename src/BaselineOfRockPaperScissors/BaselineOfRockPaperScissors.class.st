@@ -1,3 +1,6 @@
+"
+Baseline for RockPaperScissors that we can use in other programs.
+"
 Class {
 	#name : 'BaselineOfRockPaperScissors',
 	#superclass : 'BaselineOf',
