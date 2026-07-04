@@ -3,7 +3,7 @@ I am Rock. I beat Scissors. Paper beats me.
 "
 Class {
 	#name : 'Rock',
-	#superclass : 'Object',
+	#superclass : 'Hand',
 	#category : 'RockPaperScissors',
 	#package : 'RockPaperScissors'
 }

@@ -3,10 +3,15 @@ I am Paper. I beat Rock. Scissors beats me.
 "
 Class {
 	#name : 'Paper',
-	#superclass : 'Object',
+	#superclass : 'Hand',
 	#category : 'RockPaperScissors',
 	#package : 'RockPaperScissors'
 }
+
+{ #category : 'as yet unclassified' }
+Paper >> playAgainst: aPaper [ 
+	^ self
+]
 
 { #category : 'as yet unclassified' }
 Paper >> playAgainstRock: aRock [ 

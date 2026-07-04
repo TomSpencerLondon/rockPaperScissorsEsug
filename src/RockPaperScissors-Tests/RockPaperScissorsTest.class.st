@@ -6,6 +6,21 @@ Class {
 }
 
 { #category : 'tests' }
+RockPaperScissorsTest >> testPaperPlayAgainstPaper [
+	
+	|paper1 paper2 |
+	
+	paper1 := Paper new.
+	paper2 := Paper new.
+	
+	self
+		assert: (paper2 playAgainst: paper1)
+		equals: paper1;
+		assert: (paper2 playAgainst: paper2)
+		equals: paper2.
+]
+
+{ #category : 'tests' }
 RockPaperScissorsTest >> testRockPlayAgainstPaper [
 	
 	|rock paper |
@@ -48,12 +63,23 @@ RockPaperScissorsTest >> testScissorsPlayAgainstPaper [
 { #category : 'tests' }
 RockPaperScissorsTest >> testScissorsPlayAgainstRock [
 	
-	|rock scissors |
+	|paper1 scissors |
 	
-	rock := Rock new.
+	paper1 := Rock new.
 	scissors := Scissors new.
 	
 	self
-		assert: (scissors playAgainst: rock)
-		equals: rock
+		assert: (scissors playAgainst: paper1)
+		equals: paper1
+]
+
+{ #category : 'tests' }
+RockPaperScissorsTest >> testSetOfPapers [
+	
+	|set|
+	set := {Paper new. Paper new} asSet.
+	
+	self assert: set size
+	equals: 1  
+	
 ]
