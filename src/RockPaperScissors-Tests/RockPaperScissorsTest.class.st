@@ -6,6 +6,19 @@ Class {
 }
 
 { #category : 'tests' }
+RockPaperScissorsTest >> testLizardPoisonsSpock [
+	
+	|lizard spock |
+	
+	lizard := Lizard new.
+	spock := Spock new.
+	
+	self
+		assert: (lizard playAgainst: spock)
+		equals: lizard
+]
+
+{ #category : 'tests' }
 RockPaperScissorsTest >> testPaperPlayAgainstPaper [
 	
 	|paper1 paper2 |
